@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Welcome to Kiwix Server</title>
+</head>
+
+<body>
+    <header class="header">
+        <div id="logo">
+            <img src="img/kiwixlogo.png" alt="Kiwix Logo">
+        </div>
+        <div id="search">
+            <p>Search your required knowledge:</p>
+            <input type="text" name="Search" id="searchbox" onkeyup="myFunction()"
+                placeholder="Search your information">
+        </div>
+    </header>
+    <div class="sidenav">
+        <div id="filter">
+            <input type="checkbox" id="orgall" name="orgall" onchange="showhide(this)">
+            <label for="orgall"> All</label><br>
+            <input type="checkbox" id="org1" name="organization">
+            <label for="org1">Wikipedia</label><br>
+            <input type="checkbox" id="org2" name="organization">
+            <label for="org2">TED</label><br>
+            <input type="checkbox" id="org3" name="organization">
+            <label for="org3">Others</label><br><br><br><br>
+            <button class="applybtn" onclick="apply()">Apply Filters</button><br>
+        </div>
+    </div>
+    <div class="main">
+        <div class="boxinfo ted">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <h2 class="heading">How to run company like a visionary</h2>
+                    <div class="description">
+                        <div class="book__info">9 articles, 5 medias</div>
+                        <img src="https://library.kiwix.org/meta?content=ted_en_playlist-how-to-run-a-company-like-a-vi_2021-01&name=favicon"
+                            alt="">
+                    </div>
+                </div>
+                <div class="flip-box-back">
+                    <div class="book__description">Learn from future-thinking CEOs, entrepreneurs and business experts
+                        about cutting-edge tactics to keep your organization one step ahead.</div>
+                    <a class="btn"
+                        href="https://library.kiwix.org/ted_en_playlist-how-to-run-a-company-like-a-vi_2021-01/A/index#1">Explore
+                        Now &rightarrow;</a>
+                </div>
+            </div>
+        </div>
+        <div class="boxinfo other">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <h2 class="heading">PhET Interactive Simulations</h2>
+                    <div class="description">
+                        <div class="book__info">87 articles, 88 medias</div>
+                        <img src="https://library.kiwix.org/meta?content=phet_zh-cn_2021-03&name=favicon" alt="">
+                    </div>
+                </div>
+                <div class="flip-box-back">
+                    <div class="book__description">Interactive simulations for Science and Math</div>
+                    <a class="btn" href="https://library.kiwix.org/phet_zh-cn_2021-03/A/index.html">Explore Now
+                        &rightarrow;</a>
+                </div>
+            </div>
+        </div>
+        <div class="boxinfo other">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <h2 class="heading">Wîkîferheng</h2>
+                    <div class="description">
+                        <div class="book__info">732,701 articles, 14 medias</div>
+                        <img src="https://library.kiwix.org/meta?content=wiktionary_ku_all_nopic_2021-04&name=favicon"
+                            alt="">
+                    </div>
+                </div>
+                <div class="flip-box-back">
+                    <div class="book__description">Ji Wîkîferheng</div>
+                    <a class="btn"
+                        href="https://library.kiwix.org/wiktionary_ku_all_nopic_2021-04/A/Destp%C3%AAk">Explore Now
+                        &rightarrow;</a>
+                </div>
+            </div>
+        </div>
+        <div class="boxinfo wiki">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <h2 class="heading">Wikipedia</h2>
+                    <div class="description">
+                        <div class="book__info">3,586 articles, 1 medias</div>
+                        <img src="https://library.kiwix.org/meta?content=wikipedia_bjn_all_maxi_2021-03&name=favicon"
+                            alt="">
+                    </div>
+                </div>
+                <div class="flip-box-back">
+                    <div class="book__description">Offline version of Wikipedia in Banjar</div>
+                    <a class="btn"
+                        href="https://library.kiwix.org/wikipedia_bjn_all_maxi_2021-03/A/Tungkaran_Tatambaian">Explore
+                        Now &rightarrow;</a>
+                </div>
+            </div>
+        </div>
+        <div class="boxinfo ted">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <h2 class="heading">Diane von Furstenberg's 4 favorite TED Talks</h2>
+                    <div class="description">
+                        <div class="book__info">6 articles, 5 medias</div>
+                        <img src="https://library.kiwix.org/meta?content=ted_en_playlist-diane-von-furstenberg-s-5-favo_2021-01&amp;name=favicon"
+                            alt="">
+                    </div>
+                </div>
+                <div class="flip-box-back">
+                    <div class="book__description" style="font-size: 12px">The legendary fashion designer — who created
+                        the wrap dress and remains an icon in the industry (she's also President of the Council of
+                        Fashion Designers of America) — picks the 5 TED talks that have inspired her most.</div>
+                    <a class="btn"
+                        href="https://library.kiwix.org/ted_en_playlist-diane-von-furstenberg-s-5-favo_2021-01/A/index#1">Explore
+                        Now &rightarrow;</a>
+                </div>
+            </div>
+        </div>
+        <div class="boxinfo ted">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <h2 class="heading">Maestros, if you please ... !</h2>
+                    <div class="description">
+                        <div class="book__info">12 articles, 5 medias</div>
+                        <img src="https://library.kiwix.org/meta?content=ted_en_playlist-maestros-if-you-please_2021-01&amp;name=favicon"
+                            alt="">
+                    </div>
+                </div>
+                <div class="flip-box-back">
+                    <div class="book__description">These extraordinary maestros bring you into the world of writing and
+                        conducting music.</div>
+                    <a class="btn"
+                        href="https://library.kiwix.org/ted_en_playlist-maestros-if-you-please_2021-01/A/index">Explore
+                        Now &rightarrow;</a>
+                </div>
+            </div>
+        </div>
+        <div class="boxinfo wiki">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <h2 class="heading">Equipo por Wikipedia</h2>
+                    <div class="description">
+                        <div class="book__info">12,257 articles, 14 medias</div>
+                        <img src="https://library.kiwix.org/meta?content=wikipedia_es_computer_nopic_2021-03&amp;name=favicon"
+                            alt="">
+                    </div>
+                </div>
+                <div class="flip-box-back">
+                    <div class="book__description">Una selección de artículos de Wikipedia en el ordenador</div>
+                    <a class="btn"
+                        href="https://library.kiwix.org/wikipedia_es_computer_nopic_2021-03/A/Ciencias_de_la_computaci%C3%B3n">Explore
+                        Now &rightarrow;</a>
+                </div>
+            </div>
+        </div>
+        <div class="boxinfo ted">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <h2 class="heading">11 must-see TED Talks</h2>
+                    <div class="description">
+                        <div class="book__info">13 articles, 5 medias</div>
+                        <img src="https://library.kiwix.org/meta?content=ted_en_playlist-11-must-see-ted-talks_2021-01&amp;name=favicon"
+                            alt="">
+                    </div>
+                </div>
+                <div class="flip-box-back">
+                    <div class="book__description" style="font-size: 12px;">What is TED? This primer of 11 classic TED
+                        Talks show you the wide range of topics covered — and introduce you to beloved speakers like Amy
+                        Cuddy, Brené Brown, Sir Ken Robinson and Chimamanda Adichie. Find your next favorite talk ...
+                    </div>
+                    <a class="btn"
+                        href="https://library.kiwix.org/ted_en_playlist-11-must-see-ted-talks_2021-01">Explore Now
+                        &rightarrow;</a>
+                </div>
+            </div>
+        </div>
+        <div class="boxinfo ted">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <h2 class="heading">How to take charge of your personal finances</h2>
+                    <div class="description">
+                        <div class="book__info">9 articles, 5 medias</div>
+                        <img src="https://library.kiwix.org/meta?content=ted_en_playlist-how-to-take-charge-of-your-personal-finances_2021-01&amp;name=favicon"
+                            alt="">
+                    </div>
+                </div>
+                <div class="flip-box-back">
+                    <div class="book__description" style="font-size: 12px;">It's hard to know where to start with
+                        personal finance — saving, budgeting and everything else in between. These TED Talks provide
+                        insightful perspectives and practical advice to help you face your financial situation with
+                        honesty and compassion.</div>
+                    <a class="btn"
+                        href="https://library.kiwix.org/ted_en_playlist-how-to-take-charge-of-your-personal-finances_2021-01">Explore
+                        Now &rightarrow;</a>
+                </div>
+            </div>
+        </div>
+        <div class="boxinfo other">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <h2 class="heading" style="font-size: 20px;">Afrika, Okyanusya ve Amerika Yerlileri (Sanat ve Sosyal
+                        Bilimler)</h2>
+                    <div class="description">
+                        <div class="book__info">5 articles, 9 medias</div>
+                        <img src="https://library.kiwix.org/meta?content=khan-academy-videos_tr_afrika-okyanusya-ve-amerika-yerlileri-sanat-ve-sosyal-bilimler_2021-04&amp;name=favicon"
+                            alt="">
+                    </div>
+                </div>
+                <div class="flip-box-back">
+                    <div class="book__description">Khan Academy'nin her şeyi öğrenmek için Youtube kanalı.</div>
+                    <a class="btn"
+                        href="https://library.kiwix.org/khan-academy-videos_tr_afrika-okyanusya-ve-amerika-yerlileri-sanat-ve-sosyal-bilimler_2021-04">Explore
+                        Now &rightarrow;</a>
+                </div>
+            </div>
+        </div>
+        <div class="boxinfo ted">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <h2 class="heading">Simple ways to spark your creativity</h2>
+                    <div class="description">
+                        <div class="book__info">9 articles, 5 medias</div>
+                        <img src="https://library.kiwix.org/meta?content=ted_en_playlist-simple-ways-to-spark-your-creativity_2021-01&amp;name=favicon"
+                            alt="">
+                    </div>
+                </div>
+                <div class="flip-box-back">
+                    <div class="book__description">Easy, straightforward techniques to jumpstart innovative thinking and
+                        surface new, brilliant ideas.</div>
+                    <a class="btn"
+                        href="https://library.kiwix.org/ted_en_playlist-simple-ways-to-spark-your-creativity_2021-01">Explore
+                        Now &rightarrow;</a>
+                </div>
+            </div>
+        </div>
+        <div class="boxinfo other">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <h2 class="heading">Wikikirjasto</h2>
+                    <div class="description">
+                        <div class="book__info">5,733 articles, 36 medias</div>
+                        <img src="https://library.kiwix.org/meta?content=wikibooks_fi_all_maxi_2021-03&amp;name=favicon"
+                            alt="">
+                    </div>
+                </div>
+                <div class="flip-box-back">
+                    <div class="book__description">Wikikirjastosta</div>
+                    <a class="btn" href="https://library.kiwix.org/wikibooks_fi_all_maxi_2021-03">Explore Now
+                        &rightarrow;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/search.js"></script>
+    <script type='text/javascript' src="js/filter.js"></script>
+</body>
+
+</html>
